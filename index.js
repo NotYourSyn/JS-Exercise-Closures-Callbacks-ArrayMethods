@@ -88,8 +88,9 @@ function processLastItem(stringList, cb) {
  * [2] Invoking `processSum` passing `-5`, '-1', and `(num) => num + 1000`,
  * should return 994.
 */
-function processSum(/* CODE HERE */) {
-  /* CODE HERE */
+function processSum(num1,num2,cb) {
+  const newSum = num1 + num2;
+  return cb(newSum);
 }
 
 /**
@@ -110,8 +111,9 @@ function processSum(/* CODE HERE */) {
  * [2] Invoking `processProduct` passing 25 and 0 and `(num) => num + 1000`,
  * should return 1000.
 */
-function processProduct(/* CODE HERE */) {
-  /* CODE HERE */
+function processProduct(num1,num2,cb) {
+  const newProduct = num1*num2;
+  return cb(newProduct);
 }
 
 /**
