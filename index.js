@@ -89,8 +89,7 @@ function processLastItem(stringList, cb) {
  * should return 994.
 */
 function processSum(num1,num2,cb) {
-  const newSum = num1 + num2;
-  return cb(newSum);
+  return cb(num1 + num2);
 }
 
 /**
@@ -112,8 +111,7 @@ function processSum(num1,num2,cb) {
  * should return 1000.
 */
 function processProduct(num1,num2,cb) {
-  const newProduct = num1*num2;
-  return cb(newProduct);
+   return cb(num1*num2);
 }
 
 /**
@@ -134,8 +132,14 @@ function processProduct(num1,num2,cb) {
  * [2] Invoking `processDuplicateFree` passing `[1,1,2,2,3]` and `(arr) => arr.length`,
  * should return 3.
 */
-function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */) {
-  /* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */
+function processDuplicateFree(list, cb) {
+  let duplicateFree = [];
+  for (let i = 0;i < list.length;i++){
+    if(duplicateFree.indexOf(list[i])=== -1) {
+      duplicateFree.push(list[i]);
+    }
+  }
+  return duplicateFree;
 }
 
 /////////////// HIGHER-ORDER ARRAY METHODS ///////////////
